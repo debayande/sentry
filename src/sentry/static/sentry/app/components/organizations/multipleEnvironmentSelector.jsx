@@ -80,6 +80,7 @@ class MultipleEnvironmentSelector extends React.PureComponent {
   replaceSelected(newSelection) {
     this.setState({selectedEnvs: new Set(newSelection)});
     this.props.onChange(newSelection);
+    this.doUpdate();
   }
 
   /**
